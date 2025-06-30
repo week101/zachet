@@ -1,5 +1,5 @@
-def abbr(text):
-    return ''.join(word[0].upper() for word in text.split() if word and word[0].isalpha())
+def count_dgt(num):
+    return {d: str(num).count(d) for d in set(str(num))}
 
-phrase = "abc dfg gjk"
-print(abbr(phrase))
+number = 23434234232313123124
+print(count_dgt(number))
